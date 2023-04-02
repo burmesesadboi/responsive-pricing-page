@@ -3,11 +3,11 @@ import CardFeatures from "./CardFeatures";
 
 const Card = () => {
   return (
-    <div className="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-16 my-12 lg:my-24">
+    <div className="grid sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-16 my-12 lg:my-24">
       {data.map((card) => (
         <div
           key={card.id}
-          className="lg:w-60 md:w-52 w-60 p-5 rounded-xl border-2 border-primary hover:shadow-lg hover:shadow-[#E87070]/50 transition-all ease-in"
+          className="lg:w-60  md:w-52 w-60 p-5 rounded-xl border-2 border-primary hover:shadow-lg hover:shadow-[#E87070]/50 transition-all ease-in"
         >
           <span className="block text-subTitle font-bold ">{card.info}</span>
           <span className="tracking-wide text-primary text-3xl leading-10 font-bold">
@@ -24,7 +24,7 @@ const Card = () => {
                 Buy
               </button>
             </div>
-            <span className="text-xs text-secondary font-bold leading-3 tracking-tight">
+            <span className="lg:text-sm text-xs text-secondary font-bold leading-3 tracking-tight">
               {card.description}
             </span>
           </div>
