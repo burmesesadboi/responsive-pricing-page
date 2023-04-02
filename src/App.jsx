@@ -3,9 +3,11 @@ import Heading from "./components/Heading/Heading";
 
 function App() {
   return (
-    <main className="max-w-7xl h-screen mx-auto bg-white">
-      <Heading />
-      <Card />
+    <main className="h-full mx-auto">
+      <div className="flex flex-col justify-center items-center">
+        <Heading />
+        <Card />
+      </div>
     </main>
   );
 }
